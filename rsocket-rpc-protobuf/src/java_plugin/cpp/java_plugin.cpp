@@ -119,11 +119,8 @@ class JavaRSocketRpcGenerator : public google::protobuf::compiler::CodeGenerator
   }
 
   uint64_t GetSupportedFeatures() const override {
-      // Indicate that this code generator supports proto3 optional fields.
-      // (Note: don't release your code generator with this flag set until yo
-      // have actually added and tested your proto3 support!)
       return FEATURE_PROTO3_OPTIONAL;
-    }
+  }
 
 };
 

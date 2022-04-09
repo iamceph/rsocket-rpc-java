@@ -5,258 +5,193 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_rsocket_2foptions_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_rsocket_2foptions_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RSocketMethodOptions;
-}  // namespace protobuf_rsocket_2foptions_2eproto
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace io {
 namespace rsocket {
 namespace rpc {
-class RSocketMethodOptionsDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RSocketMethodOptions>
-      _instance;
-} _RSocketMethodOptions_default_instance_;
+PROTOBUF_CONSTEXPR RSocketMethodOptions::RSocketMethodOptions(
+    ::_pbi::ConstantInitialized)
+  : fire_and_forget_(false){}
+struct RSocketMethodOptionsDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RSocketMethodOptionsDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RSocketMethodOptionsDefaultTypeInternal() {}
+  union {
+    RSocketMethodOptions _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RSocketMethodOptionsDefaultTypeInternal _RSocketMethodOptions_default_instance_;
 }  // namespace rpc
 }  // namespace rsocket
 }  // namespace io
-namespace protobuf_rsocket_2foptions_2eproto {
-static void InitDefaultsRSocketMethodOptions() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_proto_2frsocket_2foptions_2eproto[1];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_proto_2frsocket_2foptions_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_proto_2frsocket_2foptions_2eproto = nullptr;
 
-  {
-    void* ptr = &::io::rsocket::rpc::_RSocketMethodOptions_default_instance_;
-    new (ptr) ::io::rsocket::rpc::RSocketMethodOptions();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::io::rsocket::rpc::RSocketMethodOptions::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<0> scc_info_RSocketMethodOptions =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRSocketMethodOptions}, {}};
-
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_RSocketMethodOptions.base);
-}
-
-::google::protobuf::Metadata file_level_metadata[1];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_proto_2frsocket_2foptions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::io::rsocket::rpc::RSocketMethodOptions, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::io::rsocket::rpc::RSocketMethodOptions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::io::rsocket::rpc::RSocketMethodOptions, fire_and_forget_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::io::rsocket::rpc::RSocketMethodOptions, fire_and_forget_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::io::rsocket::rpc::RSocketMethodOptions)},
-};
-
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::io::rsocket::rpc::_RSocketMethodOptions_default_instance_),
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::io::rsocket::rpc::RSocketMethodOptions)},
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "rsocket/options.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
+static const ::_pb::Message* const file_default_instances[] = {
+  &::io::rsocket::rpc::_RSocketMethodOptions_default_instance_._instance,
+};
+
+const char descriptor_table_protodef_proto_2frsocket_2foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
+  "\n\033rsocket/options.proto\022\016io.rsocke"
+  "t.rpc\032 google/protobuf/descriptor.proto\""
+  "/\n\024RSocketMethodOptions\022\027\n\017fire_and_forg"
+  "et\030\001 \001(\010:V\n\007options\022\036.google.protobuf.Me"
+  "thodOptions\030\241\010 \001(\0132$.io.rsocket.rpc.RSoc"
+  "ketMethodOptionsB\"\n\016io.rsocket.rpcB\016RSoc"
+  "ketOptionsP\001b\006proto3"
+  ;
+static const ::_pbi::DescriptorTable* const descriptor_table_proto_2frsocket_2foptions_2eproto_deps[1] = {
+  &::descriptor_table_google_2fprotobuf_2fdescriptor_2eproto,
+};
+static ::_pbi::once_flag descriptor_table_proto_2frsocket_2foptions_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_proto_2frsocket_2foptions_2eproto = {
+    false, false, 260, descriptor_table_protodef_proto_2frsocket_2foptions_2eproto,
+    "rsocket/options.proto",
+    &descriptor_table_proto_2frsocket_2foptions_2eproto_once, descriptor_table_proto_2frsocket_2foptions_2eproto_deps, 1, 1,
+    schemas, file_default_instances, TableStruct_proto_2frsocket_2foptions_2eproto::offsets,
+    file_level_metadata_proto_2frsocket_2foptions_2eproto, file_level_enum_descriptors_proto_2frsocket_2foptions_2eproto,
+    file_level_service_descriptors_proto_2frsocket_2foptions_2eproto,
+};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_proto_2frsocket_2foptions_2eproto_getter() {
+  return &descriptor_table_proto_2frsocket_2foptions_2eproto;
 }
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\025rsocket/options.proto\022\016io.rsocket.rpc\032"
-      " google/protobuf/descriptor.proto\"/\n\024RSo"
-      "cketMethodOptions\022\027\n\017fire_and_forget\030\001 \001"
-      "(\010:V\n\007options\022\036.google.protobuf.MethodOp"
-      "tions\030\241\010 \001(\0132$.io.rsocket.rpc.RSocketMet"
-      "hodOptionsB\"\n\016io.rsocket.rpcB\016RSocketOpt"
-      "ionsP\001b\006proto3"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 254);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "rsocket/options.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_rsocket_2foptions_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_proto_2frsocket_2foptions_2eproto(&descriptor_table_proto_2frsocket_2foptions_2eproto);
 namespace io {
 namespace rsocket {
 namespace rpc {
 
 // ===================================================================
 
-void RSocketMethodOptions::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RSocketMethodOptions::kFireAndForgetFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class RSocketMethodOptions::_Internal {
+ public:
+};
 
-RSocketMethodOptions::RSocketMethodOptions()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_rsocket_2foptions_2eproto::scc_info_RSocketMethodOptions.base);
+RSocketMethodOptions::RSocketMethodOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:io.rsocket.rpc.RSocketMethodOptions)
+  // @@protoc_insertion_point(arena_constructor:io.rsocket.rpc.RSocketMethodOptions)
 }
 RSocketMethodOptions::RSocketMethodOptions(const RSocketMethodOptions& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   fire_and_forget_ = from.fire_and_forget_;
   // @@protoc_insertion_point(copy_constructor:io.rsocket.rpc.RSocketMethodOptions)
 }
 
-void RSocketMethodOptions::SharedCtor() {
-  fire_and_forget_ = false;
+inline void RSocketMethodOptions::SharedCtor() {
+fire_and_forget_ = false;
 }
 
 RSocketMethodOptions::~RSocketMethodOptions() {
   // @@protoc_insertion_point(destructor:io.rsocket.rpc.RSocketMethodOptions)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
 }
 
-void RSocketMethodOptions::SharedDtor() {
+inline void RSocketMethodOptions::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void RSocketMethodOptions::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RSocketMethodOptions::descriptor() {
-  ::protobuf_rsocket_2foptions_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_rsocket_2foptions_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const RSocketMethodOptions& RSocketMethodOptions::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_rsocket_2foptions_2eproto::scc_info_RSocketMethodOptions.base);
-  return *internal_default_instance();
-}
-
 
 void RSocketMethodOptions::Clear() {
 // @@protoc_insertion_point(message_clear_start:io.rsocket.rpc.RSocketMethodOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   fire_and_forget_ = false;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool RSocketMethodOptions::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:io.rsocket.rpc.RSocketMethodOptions)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* RSocketMethodOptions::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
       // bool fire_and_forget = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &fire_and_forget_)));
-        } else {
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          fire_and_forget_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
           goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
     }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:io.rsocket.rpc.RSocketMethodOptions)
-  return true;
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:io.rsocket.rpc.RSocketMethodOptions)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
 }
 
-void RSocketMethodOptions::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:io.rsocket.rpc.RSocketMethodOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool fire_and_forget = 1;
-  if (this->fire_and_forget() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->fire_and_forget(), output);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:io.rsocket.rpc.RSocketMethodOptions)
-}
-
-::google::protobuf::uint8* RSocketMethodOptions::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+uint8_t* RSocketMethodOptions::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:io.rsocket.rpc.RSocketMethodOptions)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bool fire_and_forget = 1;
-  if (this->fire_and_forget() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->fire_and_forget(), target);
+  if (this->_internal_fire_and_forget() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(1, this->_internal_fire_and_forget(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:io.rsocket.rpc.RSocketMethodOptions)
   return target;
@@ -266,53 +201,41 @@ size_t RSocketMethodOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:io.rsocket.rpc.RSocketMethodOptions)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // bool fire_and_forget = 1;
-  if (this->fire_and_forget() != 0) {
+  if (this->_internal_fire_and_forget() != 0) {
     total_size += 1 + 1;
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void RSocketMethodOptions::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:io.rsocket.rpc.RSocketMethodOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RSocketMethodOptions* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RSocketMethodOptions>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:io.rsocket.rpc.RSocketMethodOptions)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:io.rsocket.rpc.RSocketMethodOptions)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RSocketMethodOptions::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    RSocketMethodOptions::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RSocketMethodOptions::GetClassData() const { return &_class_data_; }
+
+void RSocketMethodOptions::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<RSocketMethodOptions *>(to)->MergeFrom(
+      static_cast<const RSocketMethodOptions &>(from));
 }
+
 
 void RSocketMethodOptions::MergeFrom(const RSocketMethodOptions& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:io.rsocket.rpc.RSocketMethodOptions)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.fire_and_forget() != 0) {
-    set_fire_and_forget(from.fire_and_forget());
+  if (from._internal_fire_and_forget() != 0) {
+    _internal_set_fire_and_forget(from._internal_fire_and_forget());
   }
-}
-
-void RSocketMethodOptions::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:io.rsocket.rpc.RSocketMethodOptions)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RSocketMethodOptions::CopyFrom(const RSocketMethodOptions& from) {
@@ -326,35 +249,31 @@ bool RSocketMethodOptions::IsInitialized() const {
   return true;
 }
 
-void RSocketMethodOptions::Swap(RSocketMethodOptions* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void RSocketMethodOptions::InternalSwap(RSocketMethodOptions* other) {
   using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(fire_and_forget_, other->fire_and_forget_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata RSocketMethodOptions::GetMetadata() const {
-  protobuf_rsocket_2foptions_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_rsocket_2foptions_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata RSocketMethodOptions::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_proto_2frsocket_2foptions_2eproto_getter, &descriptor_table_proto_2frsocket_2foptions_2eproto_once,
+      file_level_metadata_proto_2frsocket_2foptions_2eproto[0]);
 }
-
-::google::protobuf::internal::ExtensionIdentifier< ::google::protobuf::MethodOptions,
-    ::google::protobuf::internal::MessageTypeTraits< ::io::rsocket::rpc::RSocketMethodOptions >, 11, false >
-  options(kOptionsFieldNumber, *::io::rsocket::rpc::RSocketMethodOptions::internal_default_instance());
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::MethodOptions,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::io::rsocket::rpc::RSocketMethodOptions >, 11, false>
+  options(kOptionsFieldNumber, ::io::rsocket::rpc::RSocketMethodOptions::default_instance(), nullptr);
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace rpc
 }  // namespace rsocket
 }  // namespace io
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::io::rsocket::rpc::RSocketMethodOptions* Arena::CreateMaybeMessage< ::io::rsocket::rpc::RSocketMethodOptions >(Arena* arena) {
-  return Arena::CreateInternal< ::io::rsocket::rpc::RSocketMethodOptions >(arena);
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::io::rsocket::rpc::RSocketMethodOptions*
+Arena::CreateMaybeMessage< ::io::rsocket::rpc::RSocketMethodOptions >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::io::rsocket::rpc::RSocketMethodOptions >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>
